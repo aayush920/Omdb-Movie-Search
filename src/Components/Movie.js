@@ -1,11 +1,9 @@
 import React from "react";
 
-export default function (props) {
-    {
-        if(props.src=="N/A"){
-            return null;
-        }
-    }
+export default function Movie (props) {
+  if(props.src==="N/A"){
+    return null;
+  }
   return (
     <div className="movie-card ">
       <div key={props.imdbID} className="card-title">
