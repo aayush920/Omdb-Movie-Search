@@ -11,7 +11,7 @@ const Movies = (props) => {
     }
     async function getMovie(search) {
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=${API}&s=${search}`
+        `https://www.omdbapi.com/?apikey=${API}&s=${search}`
       );
       const data = response.json();
       return data;
